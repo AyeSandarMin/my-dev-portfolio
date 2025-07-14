@@ -1,0 +1,8 @@
+Model Information:
+* title:	Tenna [Deltarune]
+* source:	https://sketchfab.com/3d-models/tenna-deltarune-230fc31e89d44450940db9aa8ae183d4
+* author:	ThatAverageJoe (https://sketchfab.com/ThatAverageJoe)
+
+Model License:
+* license type:	SKETCHFAB Standard (https://sketchfab.com/licenses)
+* requirements:	Under basic restrictions, use worldwide, on all types of media, commercially or not, and in all types of derivative works
