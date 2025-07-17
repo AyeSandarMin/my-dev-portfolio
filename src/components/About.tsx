@@ -2,6 +2,7 @@ import { useEffect } from "react";
 import { gsap } from "gsap";
 import { SplitText } from "gsap/SplitText";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import DistortedImage from "./DistortedImage";
 
 gsap.registerPlugin(SplitText, ScrollTrigger);
 
@@ -35,7 +36,7 @@ const About = () => {
         gsap.to(titleSplit.chars[index], {
           opacity: 1,
           y: 0,
-          duration: 0.3,
+          duration: 0.6,
           ease: "power2.out",
           delay: i * 0.05,
         });
@@ -205,10 +206,10 @@ const About = () => {
   return (
     <div
       id="about-section"
-      className="w-full h-screen bg-white flex items-center"
+      className="w-full h-screen bg-white flex items-center overflow-visible"
     >
       <div className="max-w-7xl mx-auto px-8 flex items-center h-full">
-        <div id="about-content" className="w-2/3 pr-12">
+        <div id="about-content" className="w-2/3 pr-12 overflow-visible">
           <h1
             id="about-title"
             className="text-4xl lg:text-5xl font-bold text-gray-900 mb-8"
@@ -218,7 +219,7 @@ const About = () => {
 
           <div
             id="about-desc"
-            className="space-y-6 text-lg text-gray-600 leading-relaxed"
+            className="space-y-6 text-md text-gray-600 leading-relaxed overflow-visible"
           >
             <p>
               I'm a front-end-focused software engineer from Myanmar, currently
@@ -233,8 +234,10 @@ const About = () => {
               exploring new ways to make the web more dynamic and user-friendly.
             </p>
             <p>
-              Outside of work, I keep my creativity alive through cooking,
-              planting, and cycling.
+              Outside of work, I keep my creativity alive through{" "}
+              <span className="font-bold">cooking</span>,{" "}
+              <span className="font-bold">planting</span>, and 
+              <span className="font-bold"> cycling</span>.
             </p>
           </div>
 
@@ -254,12 +257,13 @@ const About = () => {
         <div className="w-1/3 h-full flex items-center justify-center">
           <div
             id="profile-image"
-            className="w-80 h-80 overflow-hidden shadow-2xl border-gray-100"
+            className="w-80 h-90 mt-8 overflow-hidden shadow-2xl border-gray-100 rounded-sm"
           >
-            <img
+            <DistortedImage
               src="/my-profile.jpeg"
+              hoverSrc="/my-profile-2.jpeg"
               alt="Profile"
-              className="w-full h-full object-cover hover:scale-110 transition-transform duration-300"
+              className="w-full h-full"
             />
           </div>
         </div>
