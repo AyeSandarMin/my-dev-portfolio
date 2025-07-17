@@ -6,14 +6,6 @@ body {
   font-family: "Anonymous Pro", monospace;
 }
 
-p {
-  position: fixed;
-  top: 48%;
-  left: 0; right: 0;
-  width: 100%;
-  text-align: center;
-  z-index: 999;
-}
 .pricing-hero {
   align-items: center;
   background: #ffffff;
@@ -203,4 +195,5 @@ img {
 .explosion-img {
 	will-change: transform;
 }
+
 
